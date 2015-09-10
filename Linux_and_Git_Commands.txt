@@ -1,0 +1,70 @@
+1. scp
+http://www.hypexr.org/linux_scp_help.php
+2. os name and version
+lsb_release -a
+uname -a
+3. Installation on centos
+sudo yum -y install *.rpm
+4. Installation on ubuntu
+sudo apt-get install *
+5. Report a snapshot of active processes
+ps -ef
+6. check an instance of running java processes
+ps -ef | grep java
+7. File size
+ls -l filename
+8. Directory size
+du -sh directoryname
+9. /etc/hosts is for networking
+10. Edit ~/.bashrc with custom settings for PATH JAVA_HOME
+export JAVA_HOME to JDK directory
+export PATH to JDK dir \ bin
+11. List of vagrant commands
+http://stackoverflow.com/questions/11424690/what-exactly-do-the-vagrant-commands-do
+12. Vagrant UI credentials
+login: vagrant
+password: vagrant
+13. Ambari server default login and password: admin
+14. Build hadoop VM with Ambari and vagrant
+http://hortonworks.com/blog/building-hadoop-vm-quickly-ambari-vagrant/
+15. list of installed packages
+yum list installed
+16. remove/uninstall particular package
+yum remove packagename.rpm
+17. install a particular rpm
+yum install packagename.rpm
+18. Install rpm on ubuntu
+sudo apt-get install alien
+sudo alien -i package_file.rpm
+19. check if package is installed or not?
+dpkg -l | grep packagename
+20. Install vagrant on ubuntu
+apt-get install vagrant
+21. Install virtual box
+apt-get install virtualbox
+22. Change ownership/permissions
+sudo chown -R username /folder
+23. Opening a .tar.gz file using single command
+tar xzf file.tar.gz
+x = extract
+z = gunzip the input
+f = Read from a file and not stdin
+
+Git commands
+1. Clone branch
+git clone https://barveap@bitbucket.org/ampool/icm.git
+2. check branch
+git branch
+3. switch to develop
+git checkout develop
+4. Add changes to the branch
+git add .
+5. Checkin code
+git commit -m "Initial commit for ambari-ampool plugin"
+6. Push to the branch
+git push origin develop
+7. Renaming folders with git
+http://www.patrick-wied.at/blog/rename-files-and-folders-with-git
+8. Git taking a patch
+git diff commitid1 commitid2 > patch.txt
+
